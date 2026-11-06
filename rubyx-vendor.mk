@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/rubyx
 
 PRODUCT_COPY_FILES += \
+    vendor/xiaomi/rubyx/proprietary/system_ext/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.vtservice.rc \
     vendor/xiaomi/rubyx/proprietary/vendor/etc/.tp/thermal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/thermal.conf \
     vendor/xiaomi/rubyx/proprietary/vendor/etc/.tp/thermal.off.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/thermal.off.conf \
     vendor/xiaomi/rubyx/proprietary/vendor/etc/apdb/APDB_MT6853_S01__W2302:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6853_S01__W2302 \
@@ -1813,6 +1814,19 @@ PRODUCT_PACKAGES += \
     vendor.microtrust.hardware.soter@1.0 \
     vendor.microtrust.hardware.thh@2.0 \
     wechat.beanpod \
+    libcomutils \
+    libimsma \
+    libimsma_adapt \
+    libimsma_rtp \
+    libimsma_socketwrapper \
+    libmtk_vt_service \
+    libmtk_vt_wrapper \
+    libsignal \
+    libsink-vt \
+    libsource \
+    libvcodec_cap \
+    libvcodec_capenc \
+    libvt_avsync \
     vendor.mediatek.hardware.videotelephony-V1-ndk \
     vendor.mediatek.hardware.videotelephony@1.0 \
     MtkGbaService \
@@ -1864,7 +1878,8 @@ PRODUCT_PACKAGES += \
     thermal_manager \
     thermalloadalgod \
     vpud \
-    wlan_assistant
+    wlan_assistant \
+    vtservice
 
 PRODUCT_PACKAGES += \
     vendor_bin_hw_android_hardware_media_c2@1_2-mediatek \
