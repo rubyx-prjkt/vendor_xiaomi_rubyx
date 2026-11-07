@@ -719,6 +719,7 @@ PRODUCT_PACKAGES += \
     libthha \
     libvpu \
     libmtk_drvb \
+    libaudiopreprocessing_mtk \
     vendor.mediatek.hardware.nvram@1.0 \
     vendor.mediatek.hardware.nvram@1.1 \
     AV1SecureVdecCA \
